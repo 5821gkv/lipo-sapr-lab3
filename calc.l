@@ -19,7 +19,8 @@ This file is part of Reverse Notation Calc.
 
 #include "mystack.h"
 int int_value;
-
+#define TYPE_NUMBER 50545
+#define TYPE_SET 5454.454
 typedef enum {
     LexNumber=1001,
     LexPlus,
