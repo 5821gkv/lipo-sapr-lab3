@@ -120,7 +120,10 @@ set     \[({number}(\,{number})*)?\]
 				fprintf(stderr, "found %d\n", (int)value);}
 		else{
   	    		fprintf(stderr, "found %.2f\n", value);}	
-		return LexNumber; }		  
+		return LexNumber; }	
+\?		{
+          fprintf(stderr, "entry\n");
+ 	      return LexEntry; }
 \+		{
 		  fprintf(stderr, "plus\n");
 		  return LexPlus; }
